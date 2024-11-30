@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react';
 import styles from './Header.module.scss';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 
@@ -67,12 +66,7 @@ const Header = () => {
             {isOpen ? <CloseIcon /> : <MenuIcon />}
           </div>
           {isOpen && (
-            <motion.ul
-              initial={{ opacity: 0, x: 100 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, ease: 'easeInOut' }}
-              className={styles.mobileMenuList}
-            >
+            <ul className={styles.mobileMenuList}>
               <li><Link href="/">Home</Link></li>
               <li><Link href="/speakers">Speakers</Link></li>
               <li><Link href="/schedule">Schedule</Link></li>
@@ -83,7 +77,7 @@ const Header = () => {
                   <button>Register Now</button>
                 </a>
               </li>
-            </motion.ul>
+            </ul>
           )}
         </div>
       </nav>
