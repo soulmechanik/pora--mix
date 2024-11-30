@@ -2,8 +2,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import styles from './Header.module.scss';
-import MenuIcon from '@mui/icons-material/Menu';
-import CloseIcon from '@mui/icons-material/Close';
 import Link from 'next/link';
 
 
@@ -63,7 +61,7 @@ const Header = () => {
         </div>
         <div className={styles.mobileMenu}>
           <div className={styles.menuIcon} onClick={toggleMenu}>
-            {isOpen ? <CloseIcon /> : <MenuIcon />}
+            Menu
           </div>
           {isOpen && (
             <ul className={styles.mobileMenuList}>
