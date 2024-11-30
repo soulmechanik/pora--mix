@@ -1,0 +1,140 @@
+// components/Header/Header.module.scss
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap');
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(15, 25, 15, 0.5); /* slightly darker background */
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  transition: background-color 0.3s ease;
+  backdrop-filter: blur(20px) brightness(1.5) contrast(1.5);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.header.scrolled {
+  background-color: rgba(15, 25, 15, 0.8); /* even darker background when scrolled */
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+.desktopMenu {
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  li {
+    margin-right: 20px;
+  }
+
+  a {
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.registerButton {
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  button {
+    background-color: #086e7eb3;
+    border: none;
+    color: #fff;
+    padding: 14px 25px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 20px;
+   
+  }
+}
+
+.mobileMenu {
+  @media (min-width: 769px) {
+    display: none;
+  }
+
+  .menuIcon {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+  }
+
+  .mobileMenuList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #242424;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-right: 1rem;
+    // text-align: left;
+  }
+
+  .mobileMenuList a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .mobileMenuList button {
+    background-color: #242424;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid #fff;
+  }
+}

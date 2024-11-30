@@ -1,0 +1,57 @@
+.footer_wrapper{
+  
+ 
+    color: white;
+    background-color: black;
+    
+    
+        .footer_container{
+     width: 80%;
+     margin: auto;
+    
+    
+    
+    
+            .footer{
+                display: flex;
+                justify-content: space-between;
+                gap: 2rem;
+                flex-wrap: wrap;
+                align-content: center;
+           
+    
+    
+    
+                .box{
+                    display: flex ;
+                    flex-direction: column;
+                    gap: 1rem;
+                    max-width: 270px;
+                    margin-bottom: 20px;
+    
+    
+                    span{
+                        font-size: 14px;
+                     
+                        font-weight: 300;
+    
+                      
+    
+                        &:hover{
+                            cursor: pointer;
+                            color: #188178;
+                            scale: 1.1;
+                        }
+                    }
+    
+                }
+               
+            }
+    
+        }
+    
+    }
+    
+    .logo2{
+        font-size: 35px;
+    }

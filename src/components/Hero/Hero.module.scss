@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap');
+
+.hero {
+    background: linear-gradient(to bottom, #000000, #000a03);
+    color: #fff;
+    padding: 4em 2em;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    position: relative;
+  }
+  .vector1{
+    width: 120px;
+    left: 700px;
+    bottom: 300px;
+    position: absolute;
+  }
+
+  .vector2{
+    position: absolute;
+    width: 140px;
+    left: 120px;
+    bottom: 100px;
+
+  }
+
+.heroContent {
+  max-width: 80%;
+  margin-left: 10%;
+  text-align: left;
+}
+
+.date {
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: .5rem;
+}
+
+.titleContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.title {
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.yearBox {
+  position: absolute;
+  top: 15px;
+  right: -60px; 
+  height: 80px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 5px;
+  background: linear-gradient(to right, #5a5e5f, #d5edeb);
+  color: #000;
+
+}
+
+
+
+.heroContentWrapper {
+    display: flex;
+    justify-content: space-between;
+    width:80%;
+    flex-wrap: wrap;
+
+    margin: auto;
+  
+  }
+  
+  .heroContent {
+    width: 60%;
+    margin-left: 0; // remove left margin
+
+  }
+  
+  
+  .heroImage {
+    width: 350px;
+    height: 450px;
+    margin-right: 0;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .heroImage::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -320px;
+    width: 300px;
+    height: calc(100% + 20px);
+    background-color: #00D4FC;
+    transform: rotate(-5deg);
+    z-index: -1;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    animation: animateBefore 1s ease-in-out forwards, shine 3s infinite;
+    background-image: linear-gradient(120deg, #1c1d1d 0%, #011418 100%);
+    background-position: 0% 50%;
+    background-size: 200% 200%;
+  }
+  
+  .heroImage::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: -320px;
+    width: 300px;
+    height: calc(100% + 20px);
+    background-color: #7b7652b0; /* Champagne gold color */
+    transform: rotate(5deg);
+    z-index: -1;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    animation: animateAfter 1s ease-in-out forwards;
+  }
+  
+  @keyframes animateBefore {
+    0% {
+      left: -320px;
+      transform: rotate(-5deg) scale(0);
+    }
+    100% {
+      left: -20px;
+      transform: rotate(-5deg) scale(1);
+    }
+  }
+  
+  @keyframes animateAfter {
+    0% {
+      right: -320px;
+    }
+    100% {
+      right: -20px;
+    }
+  }
+  
+  @keyframes shine {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  .heroImage img {
+    width: 100%; // make the image fill the entire div
+    height: 100%; // make the image fill the entire div
+    object-fit: cover; // ensure the image covers the entire div
+  }
+
+
+.yearTop {
+  font-size: 30px; 
+  font-weight: 700;
+}
+
+.yearBottom {
+  font-size: 30px; 
+  font-weight: 700;
+}
+
+.conferenceTitle {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: left;
+  align-content: center;
+}
+
+.participateButton {
+  background: linear-gradient(to right, #00D4FC, #00FEE3);
+  border: none;
+  color: black;
+  padding: 15px 30px;  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.watchButton {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+}
+
+.playIcon {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.pora {
+    display: inline-block;
+    position: relative;
+    font-size: 80px;
+    font-weight: 700;
+  }
+  
+  .pora .o {
+    display: inline-block;
+    position: relative;
+    animation: colorChange 5s ease-in-out infinite;
+  }
+
+@keyframes rollAndMove {
+  0% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  20% {
+    transform: translateX(100px) rotate(360deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(200px) rotate(360deg);
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(100px) rotate(360deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0) rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    color: #00D4FC;
+    text-shadow: 0px 0px 10px #00D4FC;
+  }
+  10% {
+    color: #FF69B4;
+    text-shadow: 0px 0px 10px #FF69B4;
+  }
+  20% {
+    color: #33CC33;
+    text-shadow: 0px 0px 10px #33CC33;
+  }
+  30% {
+    color: #6666CC;
+    text-shadow: 0px 0px 10px #6666CC;
+  }
+  40% {
+    color: #CC3333;
+    text-shadow: 0px 0px 10px #CC3333;
+  }
+  50% {
+    color: #33CCCC;
+    text-shadow: 0px 0px 10px #33CCCC;
+  }
+  60% {
+    color: #CC3333;
+    text-shadow: 0px 0px 10px #CC3333;
+  }
+  70% {
+    color: #6666CC;
+    text-shadow: 0px 0px 10px #6666CC;
+  }
+  80% {
+    color: #33CC33;
+    text-shadow: 0px 0px 10px #33CC33;
+  }
+  90% {
+    color: #FF69B4;
+    text-shadow: 0px 0px 10px #FF69B4;
+  }
+  100% {
+    color: #00D4FC;
+    text-shadow: 0px 0px 10px #00D4FC;
+  }
+}
+
+@media (max-width: 768px) {
+    .hero {
+    //   padding: 1em 0.5em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 8rem;
+    }
+  
+    .heroContentWrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .heroContent {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+      
+    }
+  
+    .title {
+      font-size: 40px !important;
+      font-weight: 700;
+      margin-bottom: 5px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+  
+    .pora {
+      font-size: 40px !important;
+      font-weight: 700;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+  
+    .date {
+      font-size: 15px !important;
+      font-weight: 400;
+      margin-bottom: 5px;
+    }
+  
+    .conferenceTitle {
+      font-size: 27px !important;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+  
+    .description {
+      font-size: 15px !important;
+      font-weight: 400;
+      margin-bottom: 40px;
+      margin-top: 30px;
+      
+    }
+  
+    .buttons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+     
+    }
+  
+    .participateButton {
+      background: linear-gradient(to right, #00D4FC, #00FEE3);
+      border: none;
+      color: black;
+      padding: 5px 10px;
+      font-size: 18px !important;
+      font-weight: 500;
+      cursor: pointer;
+      margin-right: 10px;
+      padding: 20px;
+    }
+  
+    .watchButton {
+      background-color: transparent;
+      border: 1px solid #fff;
+      color: #fff;
+      padding: 5px 10px;
+      font-size: 15px !important;
+      font-weight: 500;
+      cursor: pointer;
+      display: none;
+    }
+  
+    .heroImage {
+      width: 80%;
+      height: auto;
+      margin: 20px auto;
+    }
+  
+    .heroImage img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .heroImage::before{
+        display: none;
+    }
+
+    .heroImage::after{
+        display: none;
+    }
+
+
+    .yearBox {
+        position: absolute;
+        top: 8px;
+        right: -60px; 
+        height: 80px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 5px;
+        background: linear-gradient(to right, #5a5e5f, #d5edeb);
+        color: #000;
+      
+      }
+  }
