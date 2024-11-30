@@ -1,4 +1,5 @@
 import styles from './Footer.module.scss';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -9,24 +10,27 @@ const Footer = () => {
             <h3 className={styles.logo2}>Pora Mix</h3>
             <span>Our team is dedicated to fostering connections and creating a community that brings people together..</span>
             <span>Email: getpora@gmail.com</span>
-            <span>Phone: +1 234 567 890</span>
+            <span>Phone: +2348033061107  </span>
           </div>
 
           <div className={styles.box}>
             <h3>Quick Links</h3>
-            <span>Home</span>
-            <span>About</span>
-            <span>Speakers</span>
-            <span>Tickets</span>
-            <span>Contact</span>
+            <ul className={styles.list}>
+              <li><Link href="/">Home</Link></li>
+              <li><Link href="/about">About</Link></li>
+              <li><Link href="/Event">Event</Link></li>
+              <li><Link href="/contact">Contact</Link></li>
+            </ul>
           </div>
 
           <div className={styles.box}>
-            <h3>Follow-Us</h3>
-            <span>Twitter</span>
-            <span>Facebook</span>
-            <span>Instagram</span>
-            <span>LinkedIn</span>
+            <h3>Follow Us</h3>
+            <ul className={styles.list}>
+              <li><Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</Link></li>
+              <li><Link href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</Link></li>
+              <li><Link href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</Link></li>
+              <li><Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</Link></li>
+            </ul>
           </div>
 
           <div className={styles.box}>

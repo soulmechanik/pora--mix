@@ -47,10 +47,8 @@ const Header = () => {
         <div className={styles.desktopMenu}>
           <ul>
             <li><Link href="/">Home</Link></li>
-            <li><Link href="/speakers">About Us</Link></li>
-            <li><Link href="/speakers">Speakers</Link></li>
-            <li><Link href="/schedule">Schedule</Link></li>
-            <li><Link href="/tickets">Tickets</Link></li>
+            <li><Link href="/about">About Us</Link></li>
+            <li><Link href="/flyer">Event</Link></li>
             <li><Link href="/contact">Contact</Link></li>
           </ul>
         </div>
@@ -66,10 +64,10 @@ const Header = () => {
           {isOpen && (
             <ul className={styles.mobileMenuList}>
               <li><Link href="/">Home</Link></li>
-              <li><Link href="/speakers">Speakers</Link></li>
-              <li><Link href="/schedule">Schedule</Link></li>
-              <li><Link href="/tickets">Tickets</Link></li>
               <li><Link href="/contact">Contact</Link></li>
+              <li><Link href="/about">About Us</Link></li>
+              <li><Link href="/flyer">Event</Link></li>
+             
               <li>
                 <a href="https://forms.gle/iocr1qrzWHxZeFuo9" target="_blank" rel="noopener noreferrer">
                   <button>Register Now</button>
