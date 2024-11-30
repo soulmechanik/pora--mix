@@ -1,0 +1,58 @@
+.about {
+    padding: 9em 2em;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: black;
+    color: white;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .subTitle {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  
+  .description {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  
+  .signUpButton {
+    background: linear-gradient(to right, #00D4FC, #00FEE3);
+    border: none;
+    color: black;
+    padding: 15px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .about {
+      padding: 2em 1em;
+    }
+  
+    .title {
+      font-size: 18px;
+    }
+  
+    .subTitle {
+      font-size: 14px;
+    }
+  
+    .description {
+      font-size: 12px;
+    }
+  
+    .signUpButton {
+      padding: 5px 10px;
+      font-size: 12px;
+    }
+  }

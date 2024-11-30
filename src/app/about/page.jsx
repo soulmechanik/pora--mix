@@ -1,6 +1,15 @@
+import Footer from "@/components/Footer/Footer"
+import Header from "@/components/Header/Header"
+import Abouts from "../../components/aboutwords/Abouts"
 const page = () => {
   return (
-    <div>about page</div>
+    <div>
+      <Header/>
+    <Abouts/>
+
+      <Footer/>
+    
+    </div>
     
   )
 }
