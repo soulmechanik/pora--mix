@@ -9,14 +9,16 @@ const About = () => {
       </p>
       <h3 className={styles.subTitle}>Our Mission</h3>
       <p className={styles.description}>
-        Our mission is to create meaningful opportunities for connection through casual and curated meet-ups in cities worldwide, particularly for those with limited avenues to meet like-minded individuals.
+        Our mission is to create meaningful opportunities for connection through casual and curated meet-ups in cities worldwide,<br /> particularly for those with limited avenues to meet like-minded individuals.
       </p>
       <h3 className={styles.subTitle}>Eligibility</h3>
       <p className={styles.description}>
         Please note that eligibility for participation is determined at the discretion of the event organizers.
       </p>
       <h3 className={styles.subTitle}>Get Started!</h3>
-      <button className={styles.signUpButton}>Sign up today!</button>
+      <a href="https://forms.gle/iocr1qrzWHxZeFuo9" target="_blank" rel="noopener noreferrer">
+        <button className={styles.signUpButton}>Sign up today!</button>
+      </a>
     </div>
   );
 };

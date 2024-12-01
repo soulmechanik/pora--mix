@@ -7,13 +7,13 @@ const Hero = () => {
       <img src="/Vector-2.png" alt="Vector 2" className={styles.vector2} />
       <div className={styles.heroContentWrapper}>
         <div className={styles.heroContent}>
-          <p className={styles.date}>02-04 MARCH. 2024</p>
+         
           <div className={styles.titleContainer}>
             <h1 className={styles.title}>
               <span className={styles.pora}>
                 P<span className={styles.o}>O</span>RA
               </span>
-              -MiX
+              -MiXER
             </h1>
             <div className={styles.yearBox}>
               <span className={styles.yearTop}>20</span>
@@ -28,10 +28,7 @@ const Hero = () => {
             <a href="https://forms.gle/iocr1qrzWHxZeFuo9" target="_blank" rel="noopener noreferrer">
               <button className={styles.participateButton}>Register Now</button>
             </a>
-            <button className={styles.watchButton}>
-              <span>Watch the Teaser</span>
-            
-            </button>
+           
           </div>
         </div>
         <div className={styles.heroImage}>
