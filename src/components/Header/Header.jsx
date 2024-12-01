@@ -49,12 +49,20 @@ const Header = () => {
             <li><Link href="/">Home</Link></li>
             <li><Link href="/about">About Us</Link></li>
             <li><Link href="/flyer">Event</Link></li>
-            <li><Link href="/contact">Contact</Link></li>
+            <li>
+              <Link
+                href={`https://wa.me/+2348033061107`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Contact
+              </Link>
+            </li>
           </ul>
         </div>
         <div className={styles.registerButton}>
           <a href="https://forms.gle/iocr1qrzWHxZeFuo9" target="_blank" rel="noopener noreferrer">
-            <button>Register Now</button>
+            Register Now
           </a>
         </div>
         <div className={styles.mobileMenu}>
@@ -67,10 +75,18 @@ const Header = () => {
               <li><Link href="/contact">Contact</Link></li>
               <li><Link href="/about">About Us</Link></li>
               <li><Link href="/flyer">Event</Link></li>
-             
+              <li>
+                <Link
+                  href={`https://wa.me/+2348033061107`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Contact
+                </Link>
+              </li>
               <li>
                 <a href="https://forms.gle/iocr1qrzWHxZeFuo9" target="_blank" rel="noopener noreferrer">
-                  <button>Register Now</button>
+                  Register Now
                 </a>
               </li>
             </ul>
