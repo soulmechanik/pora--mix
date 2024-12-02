@@ -42,7 +42,7 @@ const Header = () => {
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}>
       <nav className={styles.nav}>
         <div className={styles.logoContainer}>
-          <Link href="/" className={styles.logo}>Pora Mix</Link>
+          <Link href="/" className={styles.logo}>Pora Mixer</Link>
         </div>
         <div className={styles.desktopMenu}>
           <ul>
