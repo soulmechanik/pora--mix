@@ -20,10 +20,10 @@ const Hero = () => {
               <span className={styles.yearBottom}>24</span>
             </div>
           </div>
-          <h1 className={styles.conferenceTitle}>GET TOGETHER </h1>
+         
          
           <div className={styles.buttons}>
-            <a href="https://forms.gle/iocr1qrzWHxZeFuo9" target="_blank" rel="noopener noreferrer">
+            <a href="https://forms.office.com/r/Brs7vBqPtc"target="_blank" rel="noopener noreferrer">
               <button className={styles.participateButton}>Sign Up</button>
             </a>
            
