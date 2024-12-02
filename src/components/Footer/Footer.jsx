@@ -7,9 +7,8 @@ const Footer = () => {
       <div className={styles.footer_container}>
         <div className={styles.footer}>
           <div className={styles.box}>
-            <h3 className={styles.logo2}>Pora Mix</h3>
-            <span>Our team is dedicated to fostering connections and creating a community that brings people together..</span>
-            <span>Email: getpora@gmail.com</span>
+            <h3 className={styles.logo2}>Pora Mixer</h3>
+           
             <span>Phone: +2348033061107  </span>
           </div>
 
@@ -18,8 +17,16 @@ const Footer = () => {
             <ul className={styles.list}>
               <li><Link href="/">Home</Link></li>
               <li><Link href="/about">About</Link></li>
-              <li><Link href="/Event">Event</Link></li>
-              <li><Link href="/contact">Contact</Link></li>
+              <li><Link href="/flyer">Event</Link></li>
+              <li>
+              <Link
+                href={`https://wa.me/+2348033061107`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Contact
+              </Link>
+            </li>
             </ul>
           </div>
 
@@ -35,7 +42,7 @@ const Footer = () => {
 
           <div className={styles.box}>
             <h3>Address</h3>
-            <span>2 Akinyemi Avenue, Elf lekki <br />(opposite Grand Emperor Hotel)</span>
+            <span>December Event</span>
       
           </div>
         </div>

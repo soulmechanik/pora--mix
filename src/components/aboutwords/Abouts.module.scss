@@ -3,6 +3,7 @@
     font-family: 'Plus Jakarta Sans', sans-serif;
     background-color: black;
     color: white;
+    height: 80vh;
   }
   
   .title {
@@ -32,6 +33,15 @@
     font-weight: 500;
     cursor: pointer;
     margin-top: 20px;
+  }
+
+  .intro{
+    color: rgb(28, 150, 225);
+    font-weight: 900;
+  }
+
+  .hostedBy{
+    cursor: pointer;
   }
   
   @media (max-width: 768px) {

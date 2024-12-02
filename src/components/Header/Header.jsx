@@ -62,7 +62,7 @@ const Header = () => {
         </div>
         <div className={styles.registerButton}>
           <a href="https://forms.gle/iocr1qrzWHxZeFuo9" target="_blank" rel="noopener noreferrer">
-            Register Now
+            Sign Up
           </a>
         </div>
         <div className={styles.mobileMenu}>

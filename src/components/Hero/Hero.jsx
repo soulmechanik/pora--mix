@@ -21,12 +21,10 @@ const Hero = () => {
             </div>
           </div>
           <h1 className={styles.conferenceTitle}>GET TOGETHER </h1>
-          <p className={styles.description}>
-          Our team is dedicated to fostering connections and creating a community that brings people together..
-          </p>
+         
           <div className={styles.buttons}>
             <a href="https://forms.gle/iocr1qrzWHxZeFuo9" target="_blank" rel="noopener noreferrer">
-              <button className={styles.participateButton}>Register Now</button>
+              <button className={styles.participateButton}>Sign Up</button>
             </a>
            
           </div>
