@@ -85,7 +85,7 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <a href="https://forms.gle/iocr1qrzWHxZeFuo9" target="_blank" rel="noopener noreferrer">
+                <a href="https://forms.office.com/r/Brs7vBqPtc" target="_blank" rel="noopener noreferrer">
                   Register Now
                 </a>
               </li>

@@ -17,11 +17,11 @@ const About = () => {
       </p>
       <h3 className={styles.subTitle}>Get Started!</h3>
       <p className={styles.hostedBy}>
-        This event is hosted by <a href="https://poraintro.com" target="_blank" rel="noopener noreferrer"><span className={styles.intro}>Pora Intro</span></a>
+        This event hosted by <a href="https://poraintro.com" target="_blank" rel="noopener noreferrer"><span className={styles.intro}>Pora Intro</span></a>
       </p>
       <div className={styles.buttons}>
-        <a href="https://forms.gle/iocr1qrzWHxZeFuo9" target="_blank" rel="noopener noreferrer">
-          <button className={styles.signUpButton}>Sign up</button>
+        <a href="https://forms.office.com/r/Brs7vBqPtc" target="_blank" rel="noopener noreferrer">
+          <button className={styles.signUpButton}>Sign up today!</button>
         </a>
       </div>
     </div>

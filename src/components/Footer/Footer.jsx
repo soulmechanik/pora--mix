@@ -8,8 +8,9 @@ const Footer = () => {
         <div className={styles.footer}>
           <div className={styles.box}>
             <h3 className={styles.logo2}>Pora Mixer</h3>
-           
-            <span>Phone: +2348033061107  </span>
+            <span>Email: Getpora@gmail.com</span>
+            <span>Whatsapp (Nig): +234 8033061107</span>
+            <span>Whatsapp (US/CAN): +1 416 417 3697</span>
           </div>
 
           <div className={styles.box}>
@@ -43,6 +44,7 @@ const Footer = () => {
           <div className={styles.box}>
             <h3>Address</h3>
             <span>December Event</span>
+            <span>2 Akinyemi Avenue, Elf lekki (opposite Grand Emperor Hotel)</span>
       
           </div>
         </div>
