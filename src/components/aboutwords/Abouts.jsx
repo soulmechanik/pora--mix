@@ -20,7 +20,7 @@ const About = () => {
         This event is hosted by <a href="https://poraintro.com" target="_blank" rel="noopener noreferrer"><span className={styles.intro}>Pora Intro</span></a>
       </p>
       <div className={styles.buttons}>
-        <a href="https://forms.office.com/r/Brs7vBqPtc" target="_blank" rel="noopener noreferrer">
+        <a href="https://forms.gle/j9D2rXfxrFGNk6m66" target="_blank" rel="noopener noreferrer">
           <button className={styles.signUpButton}>Sign up today!</button>
         </a>
       </div>

@@ -23,7 +23,7 @@ const Hero = () => {
          
          
           <div className={styles.buttons}>
-            <a href="https://forms.office.com/r/Brs7vBqPtc"target="_blank" rel="noopener noreferrer">
+            <a href="https://forms.gle/j9D2rXfxrFGNk6m66"target="_blank" rel="noopener noreferrer">
               <button className={styles.participateButton}>Sign Up</button>
             </a>
            
